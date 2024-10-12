@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azuleh - Tienda de Carteras</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- FontAwesome para los iconos de WhatsApp e Instagram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Animación de Bienvenida -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <h1>BIENVENIDOS A AZULEH</h1>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Azuleh</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#customize">Personaliza tu Bolso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero text-white text-center">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="display-4 hero-title">Bienvenida a Azuleh</h1>
+            <p class="lead hero-description">Explora la elegancia y funcionalidad en cada diseño, adaptado a tu estilo único.</p>
+            <a href="#products" class="btn btn-success btn-lg hero-btn">Explorar Colección</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galería</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a href="cartera1.jpg" data-lightbox="gallery" data-title="Cartera Elegante">
+                        <img src="cartera1.jpg" class="img-fluid img-thumbnail gallery-img" alt="Cartera Elegante">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="cartera2.jpg" data-lightbox="gallery" data-title="Cartera Casual">
+                        <img src="cartera2.jpg" class="img-fluid img-thumbnail gallery-img" alt="Cartera Casual">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="cartera3.jpg" data-lightbox="gallery" data-title="Cartera de Noche">
+                        <img src="cartera3.jpg" class="img-fluid img-thumbnail gallery-img" alt="Cartera de Noche">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="cartera4.jpg" data-lightbox="gallery" data-title="Cartera de Noche">
+                        <img src="cartera4.jpg" class="img-fluid img-thumbnail gallery-img" alt="Cartera de Noche">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="cartera1.jpg" class="card-img-top" alt="Cartera Elegante">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartera Elegante</h5>
+                            <p class="card-text">$50.00</p>
+                            <p class="card-text">Una cartera que combina estilo y funcionalidad con un diseño clásico, ideal para cualquier ocasión.</p>
+                            <a href="#" class="btn btn-warning buy-button">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="cartera2.jpg" class="card-img-top" alt="Cartera Casual">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartera Casual</h5>
+                            <p class="card-text">$40.00</p>
+                            <p class="card-text">Perfecta para el día a día, esta cartera ofrece una mezcla de comodidad y elegancia sin esfuerzo.</p>
+                            <a href="#" class="btn btn-warning buy-button">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="cartera3.jpg" class="card-img-top" alt="Cartera de Noche">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartera de Noche</h5>
+                            <p class="card-text">$60.00</p>
+                            <p class="card-text">Con un diseño sofisticado, esta cartera es ideal para eventos nocturnos y ocasiones especiales.</p>
+                            <a href="#" class="btn btn-warning buy-button">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="cartera4.jpg" class="card-img-top" alt="Cartera de Noche">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartera de Noche</h5>
+                            <p class="card-text">$60.00</p>
+                            <p class="card-text">Con un diseño sofisticado, esta cartera es ideal para eventos nocturnos y ocasiones especiales.</p>
+                            <a href="#" class="btn btn-warning buy-button">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="cartera1.jpg" class="card-img-top" alt="Cartera Elegante">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartera Elegante</h5>
+                            <p class="card-text">$50.00</p>
+                            <p class="card-text">Una cartera que combina estilo y funcionalidad con un diseño clásico, ideal para cualquier ocasión.</p>
+                            <a href="#" class="btn btn-warning buy-button">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="cartera2.jpg" class="card-img-top" alt="Cartera Casual">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartera Casual</h5>
+                            <p class="card-text">$40.00</p>
+                            <p class="card-text">Perfecta para el día a día, esta cartera ofrece una mezcla de comodidad y elegancia sin esfuerzo.</p>
+                            <a href="#" class="btn btn-warning buy-button">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- Sección del Video (Local) -->
+    <section id="video" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Proceso de Creación</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <video controls class="w-100" id="creationVideo">
+                        <source src="creacion.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Sección de Personalización -->
+<section id="customize" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Personaliza tu Bolso</h2>
+        <form id="customizeForm">
+            <div class="form-group">
+                <label for="productSelect">Selecciona el Producto:</label>
+                <select id="productSelect" name="product" class="form-control" required>
+                    <option value="" disabled selected>Elige un producto</option>
+                    <option value="cartera1.jpg">Cartera Elegante</option>
+                    <option value="cartera2.jpg">Cartera Casual</option>
+                    <option value="cartera3.jpg">Cartera de Noche</option>
+                    <!-- Añadir más opciones si es necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Selecciona el Color:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="color" id="colorRojo" value="Rojo" required>
+                    <label class="form-check-label" for="colorRojo">
+                        <span class="color-swatch" style="background-color: #ff0000;"></span> Rojo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="color" id="colorAzul" value="Azul">
+                    <label class="form-check-label" for="colorAzul">
+                        <span class="color-swatch" style="background-color: #0000ff;"></span> Azul
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="color" id="colorVerde" value="Verde">
+                    <label class="form-check-label" for="colorVerde">
+                        <span class="color-swatch" style="background-color: #008000;"></span> Verde
+                    </label>
+                </div>
+                <!-- Añadir más colores aquí si es necesario -->
+            </div>
+            <div class="form-group">
+                <label for="activitySelect">Selecciona la Actividad:</label>
+                <select id="activitySelect" name="activity" class="form-control" required>
+                    <option value="" disabled selected>Elige una actividad</option>
+                    <option value="Trabajo">Trabajo</option>
+                    <option value="Fiesta">Fiesta</option>
+                    <option value="Casual">Casual</option>
+                    <!-- Añadir más opciones si es necesario -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Enviar Personalización</button>
+        </form>
+        <div id="customizeResponse" class="mt-3 text-center"></div>
+
+        <!-- Vista previa de la personalización -->
+        <div class="mt-5">
+            <h3 class="text-center mb-3">Vista Previa</h3>
+            <div class="text-center">
+                <img src="cartera1.jpg" alt="Vista Previa" id="previewImage" class="img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const productSelect = document.getElementById('productSelect');
+    const previewImage = document.getElementById('previewImage');
+
+    productSelect.addEventListener('change', function() {
+        const selectedProduct = this.value;
+        if (selectedProduct) {
+            previewImage.src = selectedProduct; // Cambia la fuente de la imagen previa
+        }
+    });
+</script>
+
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div class="row">
+                <!-- Testimonio 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Me encanta mi nueva cartera elegante de Azuleh. Es perfecta para cualquier ocasión y combina con todo." - <strong>Ana Gómez</strong></p>
+                    </div>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"El servicio de personalización fue increíble. Pude elegir el color que más me gustaba y quedó fantástico." - <strong>Juan Pérez</strong></p>
+                    </div>
+                </div>
+                <!-- Añadir más testimonios aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Azuleh</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <a href="fundadora.jpg" data-lightbox="fundadora" data-title="Helen Monegro">
+                        <img src="fundadora.jpg" class="img-fluid rounded-circle border border-success about-img" alt="Helen Monegro">
+                    </a>
+                </div>
+                
+                <div class="col-md-8">
+                    <p class="content-short">
+                        Azuleh nació de la pasión inquebrantable por la moda y el deseo de ofrecer carteras que se adapten a cada estilo personal. Fundada por Helen Monegro, una visionaria con un profundo aprecio por el arte de la moda, nuestra tienda se estableció con la misión de proporcionar no solo accesorios, sino verdaderas expresiones de identidad. Desde sus inicios, Azuleh ha buscado crear piezas que reflejen la elegancia y la funcionalidad, celebrando la diversidad de nuestros clientes y la singularidad de sus personalidades.
+                    </p>
+                    <div class="content-more" style="display: none;">
+                        <p>
+                            La historia de Azuleh es también la historia de un sueño convertido en realidad. Helen Monegro, inspirada por su propio viaje en el mundo de la moda, decidió emprender este camino con la firme convicción de que cada cartera puede contar una historia. Cada diseño es un testimonio de su compromiso con la calidad y la atención al detalle, fusionando técnicas tradicionales con un enfoque moderno y elegante. Nuestras carteras son el resultado de una cuidadosa elaboración a mano, utilizando materiales de la más alta calidad que garantizan durabilidad y un acabado impecable.
+                        </p>
+                        <p>
+                            En Azuleh, entendemos que cada cliente es único. Por eso, ofrecemos una variedad de productos que van desde opciones versátiles y prácticas para el día a día, hasta piezas sofisticadas y glamorosas ideales para eventos especiales. Ya sea que busques un accesorio que complemente tu atuendo diario o una cartera que se convierta en el centro de atención en una ocasión especial, en Azuleh encontrarás lo que necesitas para expresar tu estilo auténtico.
+                        </p>
+                        <p>
+                            Más que una simple tienda de carteras, Azuleh es un espacio donde la moda se encuentra con la funcionalidad, y donde cada cliente puede encontrar un pedazo de su identidad. Creemos que la moda no es solo lo que llevamos puesto, sino también una forma de contar quiénes somos. Te invitamos a explorar nuestra colección y descubrir cómo cada pieza puede ser el complemento perfecto para tu historia personal.
+                        </p>
+                    </div>
+                    <a href="javascript:void(0);" class="btn btn-primary" id="toggle-content">Ver más</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form
+                action="https://formspree.io/f/mwpkkpjo"
+                method="POST"
+                id="contactForm"
+            >
+                <div class="form-group">
+                    <label for="email">Tu correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="product">Producto:</label>
+                    <input type="text" id="product" name="product" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tu mensaje:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+                <!-- Puedes añadir otros campos aquí si es necesario -->
+                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+            </form>
+            <div id="formResponse" class="mt-3 text-center"></div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Azuleh. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <a href="https://wa.me/8299195365" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Botón de Instagram Flotante -->
+    <a href="https://www.instagram.com/azuleh_byhm/" class="instagram-float" target="_blank">
+        <i class="fab fa-instagram instagram-icon"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
